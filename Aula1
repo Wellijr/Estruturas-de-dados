@@ -1,0 +1,36 @@
+
+package exemplo1;
+import java.util.Arrays;
+import java.util.Random;
+/**
+ *
+ * @author wellington.omjunior
+ */
+public class Exemplo1 {
+
+    static float [] v =new float[50];
+    static Random rd= new Random ();
+    
+    
+    public static void entrada (){
+        float vi=12;
+        float vf=100;
+        for(int i=0; i<v.length; i++){
+        //v[i] = rd.nextFloat()*(100-(8))+(0);exemplo1\\
+        
+        }
+     }
+    
+    public static void saida(){
+       // for(float n:v){
+        //System.out.println(n); 
+       // }   
+ System.out.println( Arrays.toString(v).replace("," , "\n")); 
+    }
+ 
+    public static void main(String[] args) {
+       entrada();
+       saida();
+    }
+    
+}
