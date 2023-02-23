@@ -1,3 +1,6 @@
+ Elabore um projeto Java que defina um array de tipo float
+ * e tamanho igual a 10. Armazene no array valores aleatórios e
+ * exiba o seu conteúdo.
 
 package exemplo1;
 import java.util.Arrays;
