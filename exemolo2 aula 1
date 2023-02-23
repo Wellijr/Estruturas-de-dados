@@ -1,8 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+Elaborar um projeto Java que gere valores aleatórios para
+* alimentar um array bidimensional 4X4 do tipo inteiro. Exiba o
+* conteúdo do array.
+
 package exemplo2;
 
 import static exemplo2.Exemplo2.m;
