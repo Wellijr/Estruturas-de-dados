@@ -1,0 +1,42 @@
+package estruturas;
+
+/**
+ *
+ * @author wellington.omjunior
+ */
+public class MeuArray {
+    
+  private static Pessoas[] lista=new Pessoas[9];
+  private static int indice=0;
+    
+  public static void inserir(Pessoas pessoas){
+  pessoas.setId(indice+1);
+      lista[indice++]=pessoas; 
+  }
+  public static void mostrar(){
+    for(int i=0;i<indice;i++){
+        System.out.println(lista[i].toString());   
+   
+    }
+  }
+  /**
+   * Realizar busca binaria no array de objetos lista.
+   * @param id int
+   * @return pessoa
+   */
+  public static Pessoas pesquisar(int id){
+    
+      int inicio=0,fim=indice-1,meio;
+      while(inicio<=fim){
+                meio=(fim+inicio)/2;
+          if (id == lista[meio].getId()) {
+                return lista[meio];
+          }else if(id>lista[meio].getId()){
+                inicio= meio+1;
+          }else {
+                fim=meio-1;
+          }        
+      }
+      return null;
+  } 
+}
