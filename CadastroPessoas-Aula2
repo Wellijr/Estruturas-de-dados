@@ -1,0 +1,36 @@
+package cadastro;
+
+import estruturas.MeuArray;
+import estruturas.Pessoas;
+
+/**
+ *
+ * @author wellington.omjunior
+ */
+public class CadastroPessoas {
+
+ 
+    public static void main(String[] args) {
+         MeuArray.inserir(new Pessoas("Gerson",31));
+         MeuArray.inserir(new Pessoas("Sandra",22));
+         MeuArray.inserir(new Pessoas("Mel",3));
+         MeuArray.inserir(new Pessoas("Juh",24));
+         MeuArray.inserir(new Pessoas("bruuu",31));
+         MeuArray.inserir(new Pessoas("Sabrina",22));
+         MeuArray.inserir(new Pessoas("Melao",3));
+         MeuArray.inserir(new Pessoas("Junior",24));
+        
+         MeuArray.mostrar();
+         
+            System.out.println("=======pesquisando......=======");
+            Pessoas p=MeuArray.pesquisar(5);
+            if(p!=null){
+            System.out.println(p);
+    }else{
+             System.out.println("não achei!!");
+}
+    }
+    
+  }
+    
+
